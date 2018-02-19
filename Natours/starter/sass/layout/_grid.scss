@@ -1,6 +1,5 @@
 .row {
-  max-width: $grid-width;
-  background-color: #eee;
+  max-width: $grid-width;;
   margin: 0 auto; // centers elements inside block, auto sets left and right margin to the same
 
   &:not(:last-child) {
@@ -10,7 +9,6 @@
   @include clearfix;
 
   [class^="col-"] { // ^ selects all calsses with attributes that start with col- (* says any that contain col-)($ is end with col-)
-    background-color: blue;
     float: left;
 
     &:not(:last-child) {
