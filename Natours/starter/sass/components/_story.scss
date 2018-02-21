@@ -2,18 +2,17 @@
   width: 75%;
   margin: 0 auto; //center block inside a block
   box-shadow: 0 3rem 6rem rgba($color-black, .1);
-  background-color: $color-white;
+  background-color: rgba($color-white, .7);
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
   font-size: $default-font-size;
   transform: skewX(-12deg);
-
-
+  overflow: hidden;
 
   &__shape {
-    width: 15rem;
-    height: 15rem;
+    width: 13rem;
+    height: 13rem;
     float: left;
     -webkit-shape-outside: circle(50% at 50% 50%); // only works with height and width put in no %
     shape-outside: circle(50% at 50% 50%); //element must be floated, first var is radius
